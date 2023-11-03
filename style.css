@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'quicksand', sans-serif;
+}
+
+h2,
+h3 {
+    color: rgb(68, 203, 158);
+}
+
+footer {
+    padding: 20px;
+    color: black;
+    background: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    clear: both;
+}
+
+.featured-imege {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    /* margin-top: 20px; */
+
+}
+
+.jumbotron {
+    font-size: 20px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 60px;
+    color: black;
+}
+
+nav li {
+    list-style: none;
+    /* margin-right: 20px;
+    /*float: left;*/
+    display: inline;
+    */
+}
+
+nav {
+    background: #0fcf95;
+    padding-block: 5px;
+    background: #088da4;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    /* float: left;
+     width: 75%; */
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+aside {
+    /* float: right;
+    width: 25%;
+    padding-left: 20px; */
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
